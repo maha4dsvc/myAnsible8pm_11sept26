@@ -1,0 +1,22 @@
+---
+- mystudents:
+  - name: anil
+    phone:  90909090
+    address: 
+        doorno:101
+        stress:  2nd 
+        pincode: 500061
+
+  - name: sunil
+    phone:  90909090
+    address:  
+      doorno: 102
+      stress: 2nd
+      pincode: 500072
+
+  - name: venil
+    phone: 90909090
+    address:
+          doorno: 103
+          stress:  2nd
+          pincode: 500082
