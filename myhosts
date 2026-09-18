@@ -1,7 +1,8 @@
 
 [mywebservers]
-172.31.31.238
-172.31.42.91
+172.31.31.238 
+172.31.42.91  
+172.31.40.47
 
 
 [myappservers]
@@ -20,4 +21,13 @@
 [myRedhatservers]
 172.31.42.91
 
+
+[mygroup]
+node01  java21
+node02  java21
+node03  java21
+node04  java17
+node05  java21
+
+# ansible gives more priority to host vars than group vars
 
