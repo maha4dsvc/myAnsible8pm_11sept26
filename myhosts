@@ -20,6 +20,4 @@
 [myRedhatservers]
 172.31.42.91
 
-[mywebservers:vars]
-mywebpackondebian= apache2
-mywebpackonredhat= httpd
+
