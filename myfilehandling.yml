@@ -7,3 +7,7 @@
     apt:
       name: apache2 
       state: present
+  - name: copy a static file inot node side
+    copy:
+       src: mystaticfile
+       dest: home/maha/myfolder 
