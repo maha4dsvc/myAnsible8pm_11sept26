@@ -1,0 +1,9 @@
+---
+- hosts: all
+  become: yes
+  tasks: 
+  - include_tasks: myfile.yml
+  - name: intall webserver on ubuntu
+    apt:
+      name: apache2 
+      state: present
