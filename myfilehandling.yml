@@ -10,4 +10,4 @@
   - name: copy a static file inot node side
     copy:
        src: mystaticfile
-       dest: home/maha/myfolder 
+       dest: /home/maha/myfolder 
