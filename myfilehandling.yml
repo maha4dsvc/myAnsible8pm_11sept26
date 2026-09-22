@@ -7,18 +7,31 @@
     apt:
       name: apache2 
       state: present
+    notify: restartwebserver
+
   - name: copy a static file on node side
     copy:
        src: mystaticfile
        dest: /home/maha/myfolder 
+       
   - name: download remote file from web 
     get_url:
         url:  https://updates.jenkins.io/download/war/2.582/jenkins.war
         dest: /home/maha/myfolder/jenkins.war
         force_basic_auth: yes
+    notify: restartwebserver
 
   - name: copy index.j2 file into node side index.html file
     template:
         src: myindex.j2
         dest: /var/www/html/index.html
+    notify: restartwebserver
+    
+ 
+  handles:
+  - name: restartwebserver
+    service:
+      name: apache2 
+      state: restart 
+
      
