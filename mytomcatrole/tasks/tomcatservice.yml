@@ -1,0 +1,5 @@
+---
+- name: copy tomcat service file into node side
+  copy: 
+     src: files/mytomcatservice
+     dest: /etc/systemd/system/tomcat.service
